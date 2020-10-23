@@ -1,14 +1,12 @@
-import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
-import Default from "./components/Default";
+import React from 'react';
+import Container from "./components/Container";
 
-export default function App() {
+function App() {
   return (
-    <div className="App">
-      <Switch>
-        <Route path="/" exact component={Default} />
-        <Route path='/default' render={() => <Redirect to= "/" />} />
-      </Switch>
+    <div>
+      <Container />
     </div>
   );
 }
+
+export default App;
